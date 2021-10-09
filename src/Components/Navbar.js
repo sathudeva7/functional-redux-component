@@ -3,7 +3,7 @@ import React from "react";
 export default function Navbar({ title }) {
 
     return (
-        
+        <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">{title}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,7 +13,7 @@ export default function Navbar({ title }) {
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
@@ -33,12 +33,22 @@ export default function Navbar({ title }) {
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
     </ul>
+    <div class="col-6 col-md-4">
+  <div className="input-group ">
+
+  <input type="text" class="form-control" placeholder="Search here" aria-label="Search here" aria-describedby="basic-addon2"/>
+    <button class="btn btn-outline-secondary" type="button">Search</button>
+    </div>
+    </div>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      
+      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" ><a  href="/">Logout</a></button>
     </form>
         </div>
 </nav>
+
+
+</div>
 
         
     )

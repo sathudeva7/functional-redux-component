@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+
+
+font-family: 'Numans', sans-serif;
 }
 
 .App-logo {
@@ -36,3 +39,193 @@
     transform: rotate(360deg);
   }
 }
+
+/* Made with love by Mutiullah Samim*/
+
+
+
+
+
+
+.container{
+  
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+.jumbotron{
+  position: relative;
+  padding: 0%;
+  background: rgb(255,255,255);
+background: linear-gradient(229deg, rgba(255,255,255,1) 0%, rgba(88,224,227,1) 52%, rgba(255,255,255,1) 100%);
+}
+
+.jumbotron-container{
+  height: auto;
+  width: auto;
+
+}
+
+.card-deck .card {
+  max-width: calc(25% - 30px);
+}
+
+.card{
+  width: 15rem;
+  margin: 10px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-img-top {
+  height: 12rem;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.button-right{
+  padding-left: 150px;
+  margin: 5px;
+}
+
+.carousel-item{
+  height: 300px;
+}
+
+.btn-outline-secondary{
+  margin-left: 10px;
+}
+
+.row-cols-4{
+  display: flex;
+justify-content: center;
+}
+
+.mb-5 {
+  margin-bottom: 0%;
+}
+
+.loader{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('//upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Phi_fenomeni.gif/50px-Phi_fenomeni.gif') 
+              50% 50% no-repeat rgb(249,249,249);
+}
+
+.img-big-wrap {
+  width: 100%;
+}
+
+.gallery-wrap {
+  padding-top: 50px;
+}
+
+.img-single {
+  width: 80%;
+}
+
+.container-singlecard {
+  display: grid;
+  width: 60rem;
+  height: fit-content;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr ;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  padding: 10px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  grid-template-areas:
+    "image title title"
+    "image description description"
+    "image description description"
+    "image description description"
+    ". price price";
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.image { grid-area: image; }
+
+.title { grid-area: title; }
+
+.description { grid-area: description; }
+
+.price { grid-area: price; }

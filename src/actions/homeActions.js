@@ -2,7 +2,8 @@ import { createTypes } from "./types";
 import { homeService } from "../services/homeServices";
 
 export const homeActions = {
-    getCardDetails
+    getCardDetails,
+    setCard
 }
 
 
@@ -32,5 +33,34 @@ function getCardDetails(){
 
     function failure(error) {
         return {type: createTypes.GET_CARD_DETAILS_FAILURE, error}
+    }
+}
+
+function setCard(obj){
+    return async dispatch => {
+        try {
+            dispatch(clearExisting());
+            dispatch(request());
+            let card = await homeService.setCard(obj);
+            dispatch(success(card));
+        }catch (error) {
+            dispatch(failure(error));
+        }
+    };
+
+    function clearExisting() {
+        return {type: createTypes.SET_CARD}
+    }
+
+    function request() {
+        return {type: createTypes.SET_CARD_REQUEST}
+    }
+
+    function success(card) {
+        return {type: createTypes.SET_CARD_SUCCESS, card}
+    }
+
+    function failure(error) {
+        return {type: createTypes.SET_CARD_FAILURE, error}
     }
 }
